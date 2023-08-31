@@ -13,7 +13,7 @@ export const contactsSlice = createSlice({
       state.contacts.push(action.payload);
     },
     remove(state, action) {
-      return state.contacts.filter(({ id }) => id !== action.payload);
+      state.contacts = state.contacts.filter(({ id }) => id !== action.payload);
     },
     filterContacts(state, action) {
       state.filter = action.payload;
