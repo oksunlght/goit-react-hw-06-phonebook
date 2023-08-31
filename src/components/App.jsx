@@ -17,8 +17,6 @@ const App = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
 
-  console.log(contacts);
-
   const dispatch = useDispatch();
 
   const formSubmitHandler = ({ name, number }) => {
