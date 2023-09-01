@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { remove, getContacts, getFilter } from '../../redux/contactsSlice';
 import { Item, DeleteBtn } from './ContactItem.styled';
 
-const ContactItem = ({ id, name, number }) => {
+const ContactItem = () => {
   const dispatch = useDispatch();
 
   const contacts = useSelector(getContacts);
